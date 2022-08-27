@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+    <title>Spa Form</title>
+</head>
+<body>
+<form method = 'post' action='/menu' class="form">
+    <div class="form-items">
+        <label>Name: </label> <br>
+        <input type = 'text' name = 'name'>
+        <br><label>Skin type: </label><br>
+        <select name = 'skintype'>
+            <option value = 'Oily'>Oily</option>
+            <option value = 'Combination'>Combination</option>
+            <option value = 'Normal'>Normal</option>
+            <option value = 'Dry'>Dry</option>
+            </select><br>
+        <label>Manicure or Pedicure?</label> <br>
+        <select name = 'manipedi'>
+            <option value = 'Manicure'>Manicure</option>
+            <option value = 'Pedicure'>Pedicure</option>
+            </select><br>
+        <input type = 'submit' value = 'Submit'>
+    </div>
+</form>
+</body>
+</html>
